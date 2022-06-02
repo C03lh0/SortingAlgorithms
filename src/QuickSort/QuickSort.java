@@ -18,9 +18,9 @@ public class QuickSort {
 		
 		if(right > left) {
 			pivot = partition(array, left, right);
-			//ordena o sub-vetor da esquerda (que possui valor menor em relacao ao pivo)
+			//Ordena o sub-vetor da esquerda (que possui valor menor em relacao ao pivo)
 			quickSort(array, left, pivot - 1);
-			//ordena o sub-vetor da direita (que possui valor maior em relacao ao pivo)
+			//Ordena o sub-vetor da direita (que possui valor maior em relacao ao pivo)
 			quickSort(array, pivot + 1, right);
 		}
 	}
@@ -96,7 +96,7 @@ public class QuickSort {
 		System.out.print("Initial Array        ");
 		arrayPrint(array);
 		
-		quickSort(array, 0, 6);
+		quickSort(array, 0, size - 1);
 		
 		System.out.print("Final Array          ");
 		arrayPrint(array);
