@@ -6,5 +6,6 @@ public class App {
         MainForShellSort.run();
         System.out.println("\nend\n");
         MergeSortMain.run();
+        QuickSortMain.run();
     }
 }

@@ -25,7 +25,7 @@ public class QuickSort {
 		}
 	}
 
-	public static int partition(int[] array, int left, int right) {
+	private static int partition(int[] array, int left, int right) {
 		int pointer = left, pivot = array[left], aux;
 		
 		//Varre o vetor ate left ter o mesmo valor que right
@@ -67,39 +67,4 @@ public class QuickSort {
 		}
 		System.out.println();
 	}
-	
-	public static void main(String[] args) {
-		int size = 7, array[];
-		
-		Scanner s = new Scanner(System.in);
-		
-		System.out.print("Insert array size: ");
-		size = s.nextInt();
-		
-		array = new int[size];
-		
-		for (int i = 0; i < size; i++) {
-			System.out.print("Insert number "+(i+1)+": ");
-			array[i] = s.nextInt();
-		}
-		System.out.println();
-		
-//		array = new int [size];
-//		array[0] = 26;
-//		array[1] = 33;
-//		array[2] = 35;
-//		array[3] = 29;
-//		array[4] = 12;
-//		array[5] = 22;
-//		array[6] = 19;
-		
-		System.out.print("Initial Array        ");
-		arrayPrint(array);
-		
-		quickSort(array, 0, size - 1);
-		
-		System.out.print("Final Array          ");
-		arrayPrint(array);
-	}
-
 }
