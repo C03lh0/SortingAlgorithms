@@ -5,5 +5,6 @@ public class App {
         System.out.println("\nStart ShellSort\n");
         MainForShellSort.run();
         System.out.println("\nend\n");
+        MergeSortMain.run();
     }
 }
