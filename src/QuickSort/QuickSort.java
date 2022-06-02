@@ -68,7 +68,7 @@ public class QuickSort {
 		System.out.println();
 	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		int size = 7, array[];
 		
 		Scanner s = new Scanner(System.in);
@@ -101,5 +101,5 @@ public class QuickSort {
 		System.out.print("Final Array          ");
 		arrayPrint(array);
 	}
-
+*/
 }

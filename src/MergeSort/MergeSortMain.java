@@ -1,5 +1,4 @@
-import MergeSort.MergeSort;
-
+package MergeSort;
 public class MergeSortMain {
 
     public static void run() {
