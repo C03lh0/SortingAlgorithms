@@ -1,6 +1,7 @@
 package ShellSort.classes;
 
 public class ShellSort {
+    
     public static void Sort(Integer[] array) {
 
         ConsoleMessages.showArrayWithoutIndexArrayDivider(array);

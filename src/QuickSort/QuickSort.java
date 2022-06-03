@@ -13,15 +13,15 @@ public class QuickSort {
 	 * - Ao final de tudo, aloca o pivo no meio do vetor e o retorna
 	*/
 	
-	public static void quickSort(int array [], int left, int right) {
+	public static void sort(int array [], int left, int right) {
 		int pivot;
 		
 		if(right > left) {
 			pivot = partition(array, left, right);
 			//Ordena o sub-vetor da esquerda (que possui valor menor em relacao ao pivo)
-			quickSort(array, left, pivot - 1);
+			sort(array, left, pivot - 1);
 			//Ordena o sub-vetor da direita (que possui valor maior em relacao ao pivo)
-			quickSort(array, pivot + 1, right);
+			sort(array, pivot + 1, right);
 		}
 	}
 

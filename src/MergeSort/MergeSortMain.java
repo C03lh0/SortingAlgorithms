@@ -1,5 +1,4 @@
-import MergeSort.MergeSort;
-
+package MergeSort;
 public class MergeSortMain {
 
     public static void run() {
@@ -18,4 +17,5 @@ public class MergeSortMain {
             System.out.print(arrayInteger[i]+" ");
         }
     }
+    
 }

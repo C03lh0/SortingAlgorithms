@@ -1,9 +1,8 @@
-import QuickSort.QuickSort;
-
+package QuickSort;
 public class QuickSortMain {
+
     public static void run(){
         int size, array[];
-        QuickSort quicksort = new QuickSort();
 		
         size = 7;
 		array = new int [size];
@@ -17,11 +16,12 @@ public class QuickSortMain {
 		array[6] = 19;
 		
 		System.out.print("Initial Array        ");
-		quicksort.arrayPrint(array);
+		QuickSort.arrayPrint(array);
 		
-		quicksort.quickSort(array, 0, size - 1);
+		QuickSort.sort(array, 0, size - 1);
 		
 		System.out.print("Final Array          ");
-		quicksort.arrayPrint(array);
+		QuickSort.arrayPrint(array);
     }
+	
 }
